@@ -1,0 +1,124 @@
+.gifts {
+  margin-top: 300px;
+}
+.gifts .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+}
+.gifts .cards .gift-card {
+  margin-top: 60px;
+}
+.gifts .cards .gift-card__price {
+  font-family: "Montserrat-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 49px;
+  background: linear-gradient(180deg, #00c642 0%, #1a6028 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.gifts .cards .gift-card__title {
+  margin-top: 20px;
+  font-family: "Montserrat-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #ffffff;
+}
+.gifts .cards .gift-card__subtitle {
+  width: 80%;
+  margin-top: 8px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  font-feature-settings: "salt" on, "liga" off;
+  color: #ffffff;
+}
+.gifts .cards .gift-card__button {
+  margin-top: 20px;
+  background-color: transparent;
+  border: none;
+  font-family: "Montserrat-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #27903b;
+  cursor: pointer;
+}
+.gifts .cards .gift-card__button span {
+  font-size: 2em;
+  text-align: center;
+  vertical-align: bottom;
+}
+.gifts .mobile__section {
+  margin-top: 100px;
+}
+.gifts .mobile__section picture {
+  width: 100%;
+}
+.gifts .mobile__section picture img {
+  width: 100%;
+}
+
+@media screen and (max-width: 2559px) and (min-width: 1920px) {
+  .gifts .cards {
+    padding: 0 10%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .gifts {
+    margin-top: 450px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .gifts {
+    margin-top: 350px;
+  }
+  .gifts .cards {
+    gap: 0px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gifts {
+    margin-top: 350px;
+  }
+  .gifts .cards {
+    gap: 0px;
+    grid-template-columns: 1fr;
+  }
+  .gifts .cards .gift-card__price {
+    font-size: 38px;
+    line-height: 32px;
+  }
+  .gifts .cards .gift-card__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .gifts .cards .gift-card__subtitle {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .gifts .cards .gift-card__button {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .gifts .mobile__section {
+    width: 100%;
+  }
+  .gifts .mobile__section picture {
+    width: 100%;
+  }
+  .gifts .mobile__section picture img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=gifts.css.map */

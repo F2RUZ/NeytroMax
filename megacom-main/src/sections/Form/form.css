@@ -1,0 +1,105 @@
+.form__message {
+  padding: 42px 220px;
+  border-radius: 12px;
+  background: #151515;
+  color: #ffffff;
+  text-align: center;
+}
+.form__message .submits {
+  display: flex;
+  margin-top: 31px;
+  justify-content: center;
+}
+.form__message .submits input {
+  width: 50%;
+  padding: 17.5px 24px;
+  background-color: transparent;
+  border: 1px solid #00c642;
+  border-radius: 10px;
+  font-family: "Montserrat-Medium";
+  font-size: 20px;
+  line-height: 140%;
+  color: #ffffff;
+}
+.form__message .submits input::-moz-placeholder {
+  color: #ffffff;
+}
+.form__message .submits input::placeholder {
+  color: #ffffff;
+}
+.form__message .submits button {
+  margin-left: 20px;
+  padding: 17.5px 57.5px;
+  border: 1px solid #00c642;
+  border-radius: 10px;
+  background-color: transparent;
+  font-family: "Montserrat-Medium";
+  font-size: 20px;
+  line-height: 140%;
+  cursor: pointer;
+}
+.form__message .application {
+  margin-top: 38px;
+}
+.form__message .application p {
+  margin-left: 20px;
+  padding: 8px 0;
+  font-family: "Montserrat-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #ffffff;
+}
+.form__message .application .icons {
+  display: inline;
+  margin-left: 30px;
+}
+.form__message .application .icons img {
+  margin-left: 13px;
+}
+
+@media (max-width: 1120px) {
+  .form__message {
+    text-align: center;
+    padding: 50px 0px;
+  }
+  .form__message h3 {
+    width: 100%;
+    padding: 38px 27px;
+  }
+  .form__message .submits {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  .form__message .submits input {
+    padding: 17.5px 24px;
+    font-size: 15px;
+    line-height: 140%;
+  }
+  .form__message .submits button {
+    padding: 17.5px 57.5px;
+    font-size: 14px;
+    line-height: 140%;
+  }
+  .form__message .application {
+    text-align: left;
+  }
+  .form__message .application p {
+    text-align: left;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .form__message .application .icons {
+    display: block;
+    margin-top: 8px;
+  }
+  .form__message .application .icons a:nth-child(1) img {
+    margin-left: 0px;
+  }
+  .form__message .application .icons a img {
+    margin-left: 12px;
+  }
+}/*# sourceMappingURL=form.css.map */

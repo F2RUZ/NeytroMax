@@ -1,0 +1,126 @@
+.form {
+	&__message {
+		padding: 42px 220px;
+		border-radius: 12px;
+
+		background: #151515;
+		color: #ffffff;
+
+		text-align: center;
+
+		.submits {
+			display: flex;
+			margin-top: 31px;
+			justify-content: center;
+
+			input {
+				width: 50%;
+				padding: 17.5px 24px;
+
+				background-color: transparent;
+				border: 1px solid #00c642;
+				border-radius: 10px;
+
+				font-family: 'Montserrat-Medium';
+				font-size: 20px;
+
+				line-height: 140%;
+
+				color: #ffffff;
+			}
+			input::placeholder {
+				color: #ffffff;
+			}
+
+			button {
+				margin-left: 20px;
+				padding: 17.5px 57.5px;
+
+				border: 1px solid #00c642;
+				border-radius: 10px;
+
+				background-color: transparent;
+
+				font-family: 'Montserrat-Medium';
+				font-size: 20px;
+				line-height: 140%;
+
+				cursor: pointer;
+			}
+		}
+
+		.application {
+			margin-top: 38px;
+
+			p {
+				margin-left: 20px;
+				padding: 8px 0;
+
+				font-family: 'Montserrat-Medium';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 28px;
+				font-feature-settings: 'salt' on, 'liga' off;
+				color: #ffffff;
+			}
+			.icons {
+				display: inline;
+				margin-left: 30px;
+				img {
+					margin-left: 13px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1120px) {
+	.form {
+		&__message {
+			text-align: center;
+			padding: 50px 0px;
+			h3 {
+				width: 100%;
+				padding: 38px 27px;
+			}
+			.submits {
+				flex-direction: column;
+				gap: 30px;
+
+				align-items: center;
+				input {
+					padding: 17.5px 24px;
+					font-size: 15px;
+					line-height: 140%;
+				}
+				button {
+					padding: 17.5px 57.5px;
+					font-size: 14px;
+					line-height: 140%;
+				}
+			}
+			.application {
+				text-align: left;
+				p {
+					text-align: left;
+					font-size: 16px;
+					line-height: 22px;
+				}
+				.icons {
+					display: block;
+					margin-top: 8px;
+					a:nth-child(1) {
+						img {
+							margin-left: 0px;
+						}
+					}
+					a {
+						img {
+							margin-left: 12px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

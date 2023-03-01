@@ -1,0 +1,147 @@
+.hero {
+	position: relative;
+
+	width: 100%;
+	height: 100%;
+
+	margin-top: 190px;
+
+	&__content {
+		position: relative;
+		z-index: 2;
+		max-width: 550px;
+		&__picture img {
+			transform: translateX(-10%);
+		}
+
+		&__text {
+			font-family: 'Montserrat-Medium';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 140%;
+			color: #ffffff;
+		}
+	}
+	&__bg {
+		position: absolute;
+		top: 200px;
+		right: 0;
+		transform: translateX(12%);
+	}
+
+	&__button {
+		margin-top: 50px;
+		padding: 11.5px 40px;
+
+		background-color: transparent;
+		border: 1px solid #ffffff;
+		border-radius: 10px;
+
+		font-family: 'Montserrat-Medium';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 140%;
+		color: #ffffff;
+
+		transition: background-color 0.3s ease-in-out;
+		outline: none;
+		cursor: pointer;
+	}
+	&__button:nth-child(1) {
+		margin-right: 24px;
+	}
+	&__button-active,
+	&__button:hover,
+	&__button:focus,
+	&__button:active {
+		background-color: rgba(0, 198, 66, 1);
+		border: none;
+	}
+}
+@media (max-width: 1200px) {
+	.hero {
+		margin-top: 120px;
+		&__content {
+			text-align: center;
+			padding-left: 10px;
+			padding-right: 10px;
+			max-width: 100%;
+			&__picture img {
+				transform: translateX(10%);
+			}
+
+			&__text {
+				font-size: 16px;
+				line-height: 140%;
+				text-align: center;
+			}
+		}
+		&__button a,
+		&__button {
+			font-size: 14px;
+			line-height: 140%;
+		}
+		&__button:nth-child(1) {
+			margin-right: 100px;
+		}
+		&__bg {
+			margin-top: 10px;
+			top: 100%;
+			width: 100%;
+			&-picture {
+				width: 100%;
+
+				img {
+					width: 100%;
+					height: auto;
+					transform: translateX(-10%);
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.hero {
+		margin-top: 120px;
+		&__content {
+			text-align: center;
+			padding-left: 10px;
+			padding-right: 10px;
+			max-width: 100%;
+			&__picture img {
+				transform: translateX(0);
+			}
+
+			&__text {
+				font-size: 16px;
+				line-height: 140%;
+				text-align: center;
+			}
+		}
+		&__button a,
+		&__button {
+			font-size: 14px;
+			line-height: 140%;
+		}
+		&__button:nth-child(1) {
+			margin-right: 0;
+		}
+		&__bg {
+			margin-top: 100px;
+			top: 100%;
+			width: 100%;
+			&-picture {
+				width: 100%;
+
+				img {
+					width: 100%;
+					height: auto;
+					transform: translateX(-10%);
+				}
+			}
+		}
+	}
+}
